@@ -1,5 +1,5 @@
 # UBC Course Availability
-A Python alerts bot that scrapes the UBC website and sends text message alerts when desired courses are available.
+A Python bot that scrapes the UBC site for course availability and sends SMS alerts when spots in desired courses open up.
 
 ## Install / Setup
 
