@@ -10,10 +10,12 @@ session = HTMLSession()
 
 
 def scrape_classes(department, course):
+    classes = []
     response = session.get(url + f'dept={department}&course={course}')
     soup = BeautifulSoup(response.content, 'html.parser')
     table = soup.find('table', {'class':'table table-striped section-summary'})
-    classes = []
+    if not table:
+        return classes
     for row in table.findAll('tr')[1:]:
         col = row.findAll('td')
         values = []
