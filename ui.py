@@ -11,13 +11,13 @@ alerts = []
 
 def search_for_course_availability():
     if not alerts:
-        print('Nothing to search for.'
-              + 'Please set up an alert before searching for availability.')
+        print('Nothing to search for.',
+              'Please set up an alert before searching for availability.')
         return
     print('Searching for course availability...')
     availability(alerts)
-    print(f'Waiting {SEARCH_DELAY_MINS} minutes to try again.'
-          + 'Press ENTER to cancel.')
+    print(f'Waiting {SEARCH_DELAY_MINS} minutes to try again.',
+          'Press ENTER to cancel.')
     if input_with_timeout(60 * SEARCH_DELAY_MINS):
         return  # user interrupt
     search_for_course_availability()
@@ -53,8 +53,8 @@ def add_new_course_alert():
     alert['course_num'] = input()
     print('Term (e.g. 1, 2):')
     alert['term'] = input()
-    print('Sections (You may enter multiple sections separated by spaces,'
-          + 'e.g. 2A3 L1H):')
+    print('Sections (You may enter multiple sections separated by spaces,',
+          'e.g. 2A3 L1H):')
     alert['sections'] = input().upper().split()
     alerts.append(alert)
     print('Successfully added alert:', alert)
