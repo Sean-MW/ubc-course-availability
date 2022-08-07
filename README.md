@@ -5,13 +5,13 @@ A Python bot that scrapes the UBC site for course availability and sends SMS ale
 
 ### Clone the Repo
 ```
-git clone https://github.com/Sean-MW/ubc-course-availability.git
+git clone https://github.com/Sean-MW/ubc-waitlist.git
 ```
 ### Create and Activate a Python Virtual Environment
 ```
-cd ubc-course-availability
+cd ubc-waitlist
 python -m venv .venv
-source .venv/bin/activate
+source venv/bin/activate
 ```
 ### Install Dependencies
 ```
