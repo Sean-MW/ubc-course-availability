@@ -1,4 +1,4 @@
-from scraper import scrape_classes, get_available_classes
+from ubc_course_availability.scraper import scrape_sections, get_available_sections
 from alert import email_alert
 import os
 from dotenv import load_dotenv
@@ -11,9 +11,9 @@ PHONE_NUM_EMAIL = os.environ['PHONE_NUM_EMAIL']
 
 def availability(alerts):
     for alert in alerts:
-        classes = scrape_classes(alert['department'], alert['course_num'])
-        available_classes = get_available_classes(classes, alert['term'])
-        available_classes = [c for c in available_classes if c.section in alert['sections']]
+        classes = scrape_sections(alert['department'], alert['course_num'])
+        available_classes = get_available_sections(classes, alert['term'])
+        available_classes = [c for c in available_classes if c.section_number in alert['sections']]
         if len(available_classes) == 0:
             print('No classes currently available.')
             return
