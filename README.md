@@ -17,6 +17,10 @@ source venv/bin/activate
 ```
 pip install -e .
 ```
+[OPTIONAL] Install dev dependencies to enable testing
+```
+$ pip install -r requirements_dev.txt
+```
 ### Set Up Environment Variables
 Create file for environment variables.
 ```
