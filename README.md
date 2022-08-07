@@ -10,7 +10,7 @@ git clone https://github.com/Sean-MW/ubc-waitlist.git
 ### Create and Activate a Python Virtual Environment
 ```
 cd ubc-waitlist
-python -m venv .venv
+python -m venv venv
 source venv/bin/activate
 ```
 ### Install Dependencies
