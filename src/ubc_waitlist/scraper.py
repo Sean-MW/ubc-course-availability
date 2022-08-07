@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 from requests_html import HTMLSession
-from ubc_course_availability.Section import Section
+from ubc_waitlist.Section import Section
 
 
 table_columns = ['status', 'section', 'activity', 'term', 'delivery', 'interval', 'days', 'start',

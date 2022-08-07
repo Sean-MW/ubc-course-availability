@@ -1,4 +1,4 @@
-from ubc_course_availability.scraper import scrape_sections, get_available_sections
+from ubc_waitlist.scraper import scrape_sections, get_available_sections
 from alert import email_alert
 import os
 from dotenv import load_dotenv

@@ -1,4 +1,4 @@
-# UBC Course Availability
+# UBC Waitlist
 A Python bot that scrapes the UBC site for course availability and sends SMS alerts when spots in desired courses open up.
 
 ## Install / Setup
@@ -37,7 +37,7 @@ GMAIL_APP_PASSWORD=putyourapppasswordhere
 ### Running the Bot
 Start the bot by calling main.
 ```
-python main.py
+python src/ubc_waitlist/main.py
 ```
 A menu will pop up with the options to add and remove course alerts, view current alerts, and search for course availability.
 
