@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ubc-course-availability
+Version: 0.0.0
+Author: Sean White
+Requires-Python: >=3.6
+Requires-Dist: python-dotenv (>=0.20.0)
+Requires-Dist: pyshorteners (>=1.0.1)
+Requires-Dist: requests-html (>=0.10.0)
+Requires-Dist: beautifulsoup4 (>=4.10.0)
+
