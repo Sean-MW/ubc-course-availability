@@ -15,7 +15,7 @@ source venv/bin/activate
 ```
 ### Install Dependencies
 ```
-pip install -r requirements.txt
+pip install -e .
 ```
 ### Set Up Environment Variables
 Create file for environment variables.
