@@ -1,5 +1,5 @@
 # UBC Waitlist
-A Python bot that scrapes the UBC site for course availability and sends SMS alerts when spots in desired courses open up.
+A Python tool that scrapes the UBC site for course availability and sends SMS alerts when spots in desired courses open up.
 
 ## Install / Setup
 
